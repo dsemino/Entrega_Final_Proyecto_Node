@@ -1,9 +1,12 @@
 import express from "express"
 
 const app = express();
-
 app.get("/",(req,res) => {
-    res.send("Hola Mundo!!!!");
+    res.send("Bienvenido al servidor de prueba!!!")
+});
+
+app.get("/ping",(req,res) => {
+    res.send("/Pong");
 });
 
 const PORT = 3000;
