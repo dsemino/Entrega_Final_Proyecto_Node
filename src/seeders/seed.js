@@ -1,4 +1,4 @@
-import { productService } from './src/services/productService.js';
+import { productModel } from '../models/product.model.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -32,15 +32,16 @@ async function seedDatabase() {
     for (const producto of electrodomesticos) {
         try {
             // Usamos directamente tu servicio para respetar la arquitectura
-            const resultado = await productService.createProduct(producto);
-            console.log(`✅ Guardado con éxito: ${resultado.nombre} (ID: ${resultado.id})`);
+            const resultado = await productModel.create(producto);
+            console.log(`Guardado con éxito: ${resultado.nombre} (ID: ${resultado.id})`);
         } catch (error) {
-            console.error(`❌ Error guardando ${producto.nombre}:`, error.message);
+            console.error(`Error guardando ${producto.nombre}:`, error.message);
         }
     }
     
-    console.log("\n🚀 ¡Proceso finalizado! Los 20 datos ya están en tu Firebase.");
+    console.log("\n¡Proceso finalizado! Los 20 datos ya están en tu Firebase.");
     process.exit(0);
 }
 
 seedDatabase();
+
