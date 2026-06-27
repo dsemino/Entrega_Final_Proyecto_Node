@@ -51,6 +51,22 @@ describe("CRUD /api/products", () => {
     expect(response.body.data.nombre).toBe("Producto test CRUD");
   });
 
+  test("GET /api/products?marca=... debe filtrar los productos por marca", async () => {
+  // Realizamos la petición enviando el parámetro por Query String
+  const response = await request(app)
+    .get("/api/products")
+    .query({ marca: "Generica" }); // Esto transforma la URL a: /api/products?marca=TCL
+
+  expect(response.status).toBe(200);
+  expect(Array.isArray(response.body.data)).toBe(true);
+
+  // Validamos que TODOS los productos devueltos pertenezcan a la marca filtrada
+  response.body.data.forEach((producto) => {
+    expect(producto.marca).toBe("Generica");
+  });
+  });
+
+
   test("PUT /api/products/:id debe actualizar el producto", async () => {
     const response = await request(app)
       .put(`/api/products/${productId}`)
@@ -68,6 +84,8 @@ describe("CRUD /api/products", () => {
     expect(response.body.data.precio).toBe("2000");
     expect(response.body.data.stock).toBe("5");
   });
+
+  
 
   test("DELETE /api/products/:id debe eliminar el producto", async () => {
     const response = await request(app)
