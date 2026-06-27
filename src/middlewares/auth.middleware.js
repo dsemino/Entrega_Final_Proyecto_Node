@@ -8,7 +8,7 @@ export const verifyToken = (req, res, next) => {
     const authHeader = req.headers['authorization'];
     
     // Validar si el header existe y si arranca con la palabra "Bearer "
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {//split(" ") [1]){ 
         return res.status(403).json({ error: "Acceso denegado. Formato de token inválido o inexistente." });
     }
 

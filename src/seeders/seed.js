@@ -14,16 +14,16 @@ const electrodomesticos = [
     { nombre: "Pava Eléctrica", marca: "Philips", modelo: "HD9300", precio: 45.00, stock: 50, color: "Rojo", categoria: "Pequeños Electrodomésticos", origen: "China", description: "Selector de temperatura ideal para mate y corte automático." },
     { nombre: "Cafetera Express", marca: "Oster", modelo: "PrimaLatte II", precio: 320.00, stock: 14, color: "Rojo", categoria: "Pequeños Electrodomésticos", origen: "China", description: "Bomba italiana de 19 bares y depósito de leche automático." },
     { nombre: "Licuadora de Vaso", marca: "Moulinex", modelo: "PerfectMix+", precio: 110.00, stock: 30, color: "Plata", categoria: "Pequeños Electrodomésticos", origen: "Francia", description: "Cuchillas de tecnología Powelix y vaso de vidrio termorresistente." },
-    { nombre: "Freezer Horizontal", marca: "Gafa", modelo: "Eternity S120", precio: 540.00, stock: 6, color: "Blanco", categoria: "Refrigeración", origen: "Argentina", description: "Capacidad de 115 litros con triple función (enfria, friza, ultra)." },
-    { nombre: "Secarropas por Calor", marca: "Koh-i-noor", modelo: "C-755", precio: 290.00, stock: 11, color: "Blanco", categoria: "Lavado", origen: "Argentina", description: "Secado centrífugo de alta velocidad que cuida las prendas." },
-    { nombre: "Extractor de Aire Campana", marca: "Spar", modelo: "Flexa", precio: 210.00, stock: 18, color: "Inoxidable", categoria: "Cocina", origen: "Italia", description: "Campana purificadora de cocina de 60cm con tres velocidades." },
-    { nombre: "Horno Eléctrico de Mesa", marca: "Atma", modelo: "HG4010E", precio: 160.00, stock: 22, color: "Negro", categoria: "Cocina", origen: "China", description: "Capacidad de 40 litros con convección y timer programable." },
-    { nombre: "Lavavajillas 12 Cubiertos", marca: "Drean", modelo: "Dish 12.2X", precio: 780.00, stock: 5, color: "Inoxidable", categoria: "Lavado", origen: "Argentina", description: "Eficiencia energética clase A con programa de lavado rápido." },
-    { nombre: "Tostadora Eléctrica", marca: "Black+Decker", modelo: "T2500", precio: 35.00, stock: 40, color: "Negro", categoria: "Pequeños Electrodomésticos", origen: "China", description: "Ranuras extra anchas con 7 niveles de tostado y función descongelar." },
-    { nombre: "Procesadora de Alimentos", marca: "Liliana", modelo: "Amproc", precio: 85.00, stock: 25, color: "Blanco", categoria: "Pequeños Electrodomésticos", origen: "Argentina", description: "Pica, rebana, ralla, licúa y amasa con sus múltiples accesorios." },
-    { nombre: "Plancha a Vapor", marca: "Braun", modelo: "TexStyle 3", precio: 65.00, stock: 35, color: "Azul", categoria: "Cuidado de la Ropa", origen: "Hungría", description: "Suela de cerámica antiadherente con golpe de vapor potente." },
-    { nombre: "Termotanque Eléctrico", marca: "Rheem", modelo: "TE085", precio: 410.00, stock: 9, color: "Blanco", categoria: "Climatización", origen: "Argentina", description: "Capacidad de 85 litros con aislamiento de poliuretano de alta densidad." },
-    { nombre: "Fabrica de Pan Automática", marca: "Yelmo", modelo: "FP-1500", precio: 195.00, stock: 13, color: "Plata", categoria: "Pequeños Electrodomésticos", origen: "China", description: "12 programas digitales para hacer pan, masas, budines y mermeladas." }
+    // { nombre: "Freezer Horizontal", marca: "Gafa", modelo: "Eternity S120", precio: 540.00, stock: 6, color: "Blanco", categoria: "Refrigeración", origen: "Argentina", description: "Capacidad de 115 litros con triple función (enfria, friza, ultra)." },
+    // { nombre: "Secarropas por Calor", marca: "Koh-i-noor", modelo: "C-755", precio: 290.00, stock: 11, color: "Blanco", categoria: "Lavado", origen: "Argentina", description: "Secado centrífugo de alta velocidad que cuida las prendas." },
+    // { nombre: "Extractor de Aire Campana", marca: "Spar", modelo: "Flexa", precio: 210.00, stock: 18, color: "Inoxidable", categoria: "Cocina", origen: "Italia", description: "Campana purificadora de cocina de 60cm con tres velocidades." },
+    // { nombre: "Horno Eléctrico de Mesa", marca: "Atma", modelo: "HG4010E", precio: 160.00, stock: 22, color: "Negro", categoria: "Cocina", origen: "China", description: "Capacidad de 40 litros con convección y timer programable." },
+    // { nombre: "Lavavajillas 12 Cubiertos", marca: "Drean", modelo: "Dish 12.2X", precio: 780.00, stock: 5, color: "Inoxidable", categoria: "Lavado", origen: "Argentina", description: "Eficiencia energética clase A con programa de lavado rápido." },
+    // { nombre: "Tostadora Eléctrica", marca: "Black+Decker", modelo: "T2500", precio: 35.00, stock: 40, color: "Negro", categoria: "Pequeños Electrodomésticos", origen: "China", description: "Ranuras extra anchas con 7 niveles de tostado y función descongelar." },
+    // { nombre: "Procesadora de Alimentos", marca: "Liliana", modelo: "Amproc", precio: 85.00, stock: 25, color: "Blanco", categoria: "Pequeños Electrodomésticos", origen: "Argentina", description: "Pica, rebana, ralla, licúa y amasa con sus múltiples accesorios." },
+    // { nombre: "Plancha a Vapor", marca: "Braun", modelo: "TexStyle 3", precio: 65.00, stock: 35, color: "Azul", categoria: "Cuidado de la Ropa", origen: "Hungría", description: "Suela de cerámica antiadherente con golpe de vapor potente." },
+    // { nombre: "Termotanque Eléctrico", marca: "Rheem", modelo: "TE085", precio: 410.00, stock: 9, color: "Blanco", categoria: "Climatización", origen: "Argentina", description: "Capacidad de 85 litros con aislamiento de poliuretano de alta densidad." },
+    // { nombre: "Fabrica de Pan Automática", marca: "Yelmo", modelo: "FP-1500", precio: 195.00, stock: 13, color: "Plata", categoria: "Pequeños Electrodomésticos", origen: "China", description: "12 programas digitales para hacer pan, masas, budines y mermeladas." }
 ];
 
 async function seedDatabase() {
@@ -39,7 +39,7 @@ async function seedDatabase() {
         }
     }
     
-    console.log("\n¡Proceso finalizado! Los 20 datos ya están en tu Firebase.");
+    console.log("\n¡Proceso finalizado! Los 10 datos ya están en tu Firebase.");
     process.exit(0);
 }
 
